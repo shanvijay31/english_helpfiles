@@ -1,0 +1,37 @@
+###User Defined Function###
+_GUICtrlDTP_GetSystemTime
+
+###Description###
+Retrieves the currently selected date and time
+
+###Syntax###
+#include <GuiDateTimePicker.au3>
+_GUICtrlDTP_GetSystemTime ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+@@End@@
+
+###ReturnValue###
+Returns an array with the following format:
+	[0] - Year
+	[1] - Month
+	[2] - Day
+	[3] - Hour
+	[4] - Minute
+	[5] - Second
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlDTP_SetSystemTime, _GUICtrlDTP_GetSystemTimeEx
+
+
+###Example###
+@@IncludeExample@@

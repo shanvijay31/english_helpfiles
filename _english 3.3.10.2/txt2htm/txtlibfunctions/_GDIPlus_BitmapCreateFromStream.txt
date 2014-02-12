@@ -1,0 +1,38 @@
+###User Defined Function###
+_GDIPlus_BitmapCreateFromStream
+
+###Description###
+Creates a Bitmap object based on an IStream COM interface
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_BitmapCreateFromStream ( $pStream )
+
+
+###Parameters###
+@@ParamTable@@
+$pStream
+	Pointer to an IStream COM interface
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a handle to a new Bitmap object.
+Failure:	0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+After you are done with the object, call <a href="_GDIPlus_BitmapDispose.htm">_GDIPlus_BitmapDispose()</a> to release the object resources.
+
+
+###Related###
+_GDIPlus_ImageDispose, _WinAPI_CreateStreamOnHGlobal
+
+
+###See Also###
+@@MsdnLink@@ GdipCreateBitmapFromStream
+
+
+###Example###
+@@IncludeExample@@

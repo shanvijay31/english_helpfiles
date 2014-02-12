@@ -1,0 +1,36 @@
+###User Defined Function###
+_GUICtrlListView_GetItemCut
+
+###Description###
+Determines whether the item is marked for a cut and paste operation
+
+###Syntax###
+#include <GuiListView.au3>
+_GUICtrlListView_GetItemCut ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iIndex
+	0-based index of the item
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the item is marked for a cut and paste operation.
+False:	the item is not marked for a cut and paste operation.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlListView_SetItemCut
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,46 @@
+###User Defined Function###
+_ScreenCapture_CaptureWnd
+
+###Description###
+Captures a screen shot of a specified window or controlID
+
+###Syntax###
+#include <ScreenCapture.au3>
+_ScreenCapture_CaptureWnd ( $sFileName, $hWnd [, $iLeft = 0 [, $iTop = 0 [, $iRight = -1 [, $iBottom = -1 [, $bCursor = True]]]]] )
+
+
+###Parameters###
+@@ParamTable@@
+$sFileName
+	Full path and extension of the image file
+$hWnd
+	Handle to the window to be captured
+$iLeft
+	[optional] X coordinate of the upper left corner of the client rectangle
+$iTop
+	[optional] Y coordinate of the upper left corner of the client rectangle
+$iRight
+	[optional] X coordinate of the lower right corner of the rectangle
+$iBottom
+	[optional] Y coordinate of the lower right corner of the rectangle
+$bCursor
+	[optional] If True the cursor will be captured with the image
+@@End@@
+
+###ReturnValue###
+Returns a handle to an HBITMAP if $sFileName is empty.
+	If called with $sFileName then the image is saved to the file and nothing is returned.
+
+
+###Remarks###
+All coordinates are in client coordinate mode.
+
+If a handle is returned, it must be released using <a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject()</a>.
+
+
+###Related###
+_WinAPI_DeleteObject
+
+
+###Example###
+@@IncludeExample@@

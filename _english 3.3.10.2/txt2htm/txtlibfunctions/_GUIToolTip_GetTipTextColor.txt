@@ -1,0 +1,30 @@
+###User Defined Function###
+_GUIToolTip_GetTipTextColor
+
+###Description###
+Retrieves the text color of a ToolTip control
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_GetTipTextColor ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+Returns the COLORREF (BGR) value of text color of the ToolTip control.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUIToolTip_SetTipTextColor, _GUIToolTip_SetTipBkColor, _GUIToolTip_GetTipBkColor
+
+###Example###
+@@IncludeExample@@

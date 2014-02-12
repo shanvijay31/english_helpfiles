@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUICtrlHeader_GetItemParam
+
+###Description###
+Retrieves the param value of the item
+
+###Syntax###
+#include <GuiHeader.au3>
+_GUICtrlHeader_GetItemParam ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+$iIndex
+	0-based item index
+@@End@@
+
+###ReturnValue###
+Returns the item param value.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlHeader_SetItemParam
+
+
+###Example###
+@@IncludeExample@@

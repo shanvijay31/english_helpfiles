@@ -1,0 +1,34 @@
+###Function###
+FileReadToArray
+
+###Description###
+Reads the specified file into an array.
+
+###Syntax###
+FileReadToArray ( "filehandle/filename" )
+
+
+###Parameters###
+@@ParamTable@@
+filehandle/filename
+	The handle of a file, as returned by a previous call to <a href="FileOpen.htm">FileOpen()</a>. Alternatively you may use a string filename as the first parameter.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a 1 dimension array containing one line of text per element.
+Failure:	sets the @error flag to non_zero.
+@error:	1 = Error opening specified file
+	2 = Empty file
+@@End@@
+
+
+###Remarks###
+
+
+###Related###
+FileRead, FileReadLine
+
+
+###Example###
+@@IncludeExample@@

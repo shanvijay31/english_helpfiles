@@ -1,0 +1,36 @@
+###User Defined Function###
+_GUICtrlRebar_GetBandStyleHidden
+
+###Description###
+Determine if band hidden flag is set
+
+###Syntax###
+#include <GuiReBar.au3>
+_GUICtrlRebar_GetBandStyleHidden ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the rebar control
+$iIndex
+	0-based index of the band
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the flag lag is set (The band will not be visible).
+False:	the flag not set.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlRebar_SetBandStyleHidden, _GUICtrlRebar_GetBandStyle
+
+
+###Example###
+@@IncludeExample@@

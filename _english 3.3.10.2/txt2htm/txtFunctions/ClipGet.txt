@@ -1,0 +1,33 @@
+###Function###
+ClipGet
+
+###Description###
+Retrieves text from the clipboard.
+
+###Syntax###
+ClipGet (  )
+
+
+###Parameters###
+None.
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a string containing the text on the clipboard.
+Failure:	sets the @error to non-zero.
+@error:	1 = if clipboard is empty
+	2 = if contains a non-text entry.
+	3 or 4  = if cannot access the clipboard.
+@@End@@
+
+
+###Remarks###
+When multiple selecting file/dir are stored in the clipboard, the filename/dirname are returned as texts separated by @LF.
+
+
+###Related###
+ClipPut
+
+
+###Example###
+@@IncludeExample@@

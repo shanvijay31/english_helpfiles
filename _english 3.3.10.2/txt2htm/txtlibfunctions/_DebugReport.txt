@@ -1,0 +1,41 @@
+###User Defined Function###
+_DebugReport
+
+###Description###
+Writes to a debugging session
+
+###Syntax###
+#include <Debug.au3>
+_DebugReport ( $sData [, $bLastError = False [, $bExit = False]] )
+
+
+###Parameters###
+@@ParamTable@@
+$sData
+	Data to be reported
+$bLastError
+	[optional] True if <a href="_WinAPI_GetLastErrorMessage.htm">_WinAPI_GetLastErrorMessage()</a> must be append to the data being reported
+$bExit
+	[optional] True if the script must be terminated
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	1 (see remarks).
+Failure:	0.
+@@End@@
+
+
+###Remarks###
+If no <a href="_DebugSetup.htm">_DebugSetup()</a> have been issued the function always returns.
+@error of the caller is preserved.
+@extended can be set to Windows API <a href="_WinNet_GetLastError.htm">_WinNet_GetLastError()</a> if $bLastError = True.
+Otherwise it is preserved.
+
+
+###Related###
+_DebugSetup
+
+
+###Example###
+@@IncludeExample@@

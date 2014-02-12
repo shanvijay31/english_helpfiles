@@ -1,0 +1,35 @@
+###User Defined Function###
+_GDIPlus_EncodersGetSize
+
+###Description###
+Get the total size of the structure that is returned by _GDIPlus_GetImageEncoders
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_EncodersGetSize (  )
+
+
+###Parameters###
+None.
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the total size, in bytes.
+Failure:	-1 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GDIPlus_EncodersGetCount
+
+
+###See Also###
+@@MsdnLink@@ GdipGetImageEncodersSize
+
+
+###Example###
+@@IncludeExample@@

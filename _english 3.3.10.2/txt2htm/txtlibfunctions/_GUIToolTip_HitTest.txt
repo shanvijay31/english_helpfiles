@@ -1,0 +1,53 @@
+###User Defined Function###
+_GUIToolTip_HitTest
+
+###Description###
+Retrieves the information that a ToolTip control maintains about a tool
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_HitTest ( $hWnd, $hTool, $iX, $iY )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+$hTool
+	Handle to the window that contains the tool
+$iX
+	X position to test
+$iY
+	Y position to test
+@@End@@
+
+###ReturnValue###
+Returns an array with the following format:
+	[0] - Comma separated string displaying TTF_ flags used
+		TTF_IDISHWND = Indicates that $iID is the window handle to the tool instead of the ID
+		TTF_CENTERTIP = Centers the window below the tool specified by $iID
+		TTF_RTLREADING = Indicates that text will be displayed in the opposite direction
+		TTF_SUBCLASS = Indicates that the control should subclass the tool's window to intercept messages
+		TTF_TRACK = Positions the control next to the tool to which it corresponds
+		TTF_ABSOLUTE = Positions the window at the same coordinates provided by TTM_TRACKPOSITION
+		TTF_TRANSPARENT = 	Causes the control to forward mouse messages to the parent window
+		TTF_PARSELINKS = Indicates that links in the control text should be parsed
+	[1] - Handle to the window that contains the tool
+	[2] - Identifier of the tool
+	[3] - X coordinate of the upper left corner of the rectangle
+	[4] - Y coordinate of the upper left corner of the rectangle
+	[5] - X coordinate of the lower right corner of the rectangle
+	[6] - Y coordinate of the lower right corner of the rectangle
+	[7] - Handle to the instance that contains the string resource for the tool
+	[8] - Text for the tool
+	[9] - Application-defined value associated with the tool
+
+
+###Remarks###
+This message can only be used when the tool has the $TTF_TRACK flag set. _GUIToolTip_HitTest will fail if $TTF_TRACK is not set, regardless if the hit point is in the tools rectangle or not.
+
+
+###Related###
+
+###Example###
+@@IncludeExample@@

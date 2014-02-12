@@ -1,0 +1,50 @@
+###User Defined Function###
+_GDIPlus_PathAddArc
+
+###Description###
+Adds an elliptical arc to the current figure of a path
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_PathAddArc ( $hPath, $nX, $nY, $nWidth, $nHeight, $fStartAngle, $fSweepAngle )
+
+
+###Parameters###
+@@ParamTable@@
+$hPath
+	Pointer to a GraphicsPath object
+$nX
+	X coordinate of the upper-left corner of the ellipse that contains the arc
+$nY
+	Y coordinate of the upper-left corner of the ellipse that contains the arc
+$nWidth
+	Width of the bounding rectangle for the ellipse that contains the arc
+$nHeight
+	Height of the bounding rectangle for the ellipse that contains the arc
+$fStartAngle
+	The angle, in degrees, between the X axis and the starting point of the arc
+$fSweepAngle
+	The angle, in degrees, between the starting and ending points of the arc
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None
+
+
+###See Also###
+@@MsdnLink@@ GdipAddPathArc
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUICtrlListView_GetItemIndent
+
+###Description###
+Retrieves the number of image widths the item is indented
+
+###Syntax###
+#include <GuiListView.au3>
+_GUICtrlListView_GetItemIndent ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iIndex
+	0-based item index
+@@End@@
+
+###ReturnValue###
+Returns the item indention.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlListView_SetItemIndent
+
+
+###Example###
+@@IncludeExample@@

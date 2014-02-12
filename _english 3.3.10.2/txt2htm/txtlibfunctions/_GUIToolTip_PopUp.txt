@@ -1,0 +1,30 @@
+###User Defined Function###
+_GUIToolTip_PopUp
+
+###Description###
+Causes the ToolTip to display at the coordinates of the last mouse message
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_PopUp ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUIToolTip_Pop
+
+###Example###
+@@IncludeExample@@

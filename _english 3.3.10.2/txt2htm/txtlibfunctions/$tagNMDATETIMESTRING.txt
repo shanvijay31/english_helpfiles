@@ -1,0 +1,29 @@
+###Structure Name###
+$tagNMDATETIMESTRING
+
+###Description###
+Contains information specific to an edit operation that has taken place in the control
+
+###Syntax###
+Global Const $tagNMDATETIMESTRING = $tagNMHDR & ";ptr UserString;" & $tagSYSTEMTIME & ";dword Flags"
+
+
+###Fields###
+@@ParamTable@@
+$tagNMHDR
+	Contains information about a notification message.
+UserString
+	Address of the null terminated string that the user entered?
+$tagSYSTEMTIME
+	date and time that must be filled in by the owner when handling the $DTN_USERSTRING notification code. 
+Flags
+	Return field. Set this member to $GDT_VALID to indicate that the date is valid or to $GDT_NONE to
+	set the control to "no date" status ($DTS_SHOWNONE style only).
+@@End@@
+
+###Remarks###
+This message is used with the $DTN_USERSTRING notification message.
+
+
+###Related###
+$tagNMHDR, $tagSYSTEMTIME

@@ -1,0 +1,32 @@
+###User Defined Function###
+_GUIToolTip_ToolExists
+
+###Description###
+Determines whether a tool currently exists (is displayed)
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_ToolExists ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the tool exists.
+False:	the tool does not exist.
+@@End@@
+
+
+###Remarks###
+This function will only return true if the ToolTip control is currently displaying one of the Tools added to it.
+
+
+###Related###
+
+###Example###
+@@IncludeExample@@

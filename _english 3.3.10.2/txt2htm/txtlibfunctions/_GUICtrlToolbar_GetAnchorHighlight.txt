@@ -1,0 +1,35 @@
+###User Defined Function###
+_GUICtrlToolbar_GetAnchorHighlight
+
+###Description###
+Retrieves the anchor highlight setting
+
+###Syntax###
+#include <GuiToolbar.au3>
+_GUICtrlToolbar_GetAnchorHighlight ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	anchor highlighting is enabled.
+False:	anchor highlighting is not enabled?
+@@End@@
+
+
+###Remarks###
+Anchor highlighting means that the last highlighted item will remain highlighted until another item is highlighted.
+This occurs even if the cursor leaves the toolbar control.
+
+
+###Related###
+_GUICtrlToolbar_SetAnchorHighlight
+
+
+###Example###
+@@IncludeExample@@

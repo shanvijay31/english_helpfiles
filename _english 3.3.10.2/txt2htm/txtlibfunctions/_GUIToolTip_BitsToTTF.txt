@@ -1,0 +1,30 @@
+###User Defined Function###
+_GUIToolTip_BitsToTTF
+
+###Description###
+Decode bit flags to TTF_* strings
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_BitsToTTF ( $iFlags )
+
+
+###Parameters###
+@@ParamTable@@
+$iFlags
+	A value representing the ToolTip constants needing decoding
+@@End@@
+
+###ReturnValue###
+Returns a comma separated string showing what ToolTip constants make up the $iFlags value.
+
+
+###Remarks###
+None.
+
+
+###Related###
+None.
+
+###Example###
+@@IncludeExample@@

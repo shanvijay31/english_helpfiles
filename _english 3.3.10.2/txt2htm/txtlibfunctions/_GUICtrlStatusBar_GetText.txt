@@ -1,0 +1,36 @@
+###User Defined Function###
+_GUICtrlStatusBar_GetText
+
+###Description###
+Retrieves the text from the specified part
+
+###Syntax###
+#include <GuiStatusBar.au3>
+_GUICtrlStatusBar_GetText ( $hWnd, $iPart )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+$iPart
+	0-based part index
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the part text.
+Failure:	sets the @error flag to non-zero.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlStatusBar_SetText
+
+
+###Example###
+@@IncludeExample@@

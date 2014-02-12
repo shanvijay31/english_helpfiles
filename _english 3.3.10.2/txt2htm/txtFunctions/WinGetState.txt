@@ -1,0 +1,42 @@
+###Function###
+WinGetState
+
+###Description###
+Retrieves the state of a given window.
+
+###Syntax###
+WinGetState ( "title" [, "text"] )
+
+
+###Parameters###
+@@ParamTable@@
+title
+	The title/hWnd/class of the window to get the state. See <a href="../intro/windowsadvanced.htm">Title special definition</a>.
+text
+	[optional] The text of the window to get the state. Default is an empty string. See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a value indicating the state of the window.  Multiple values are added together so use <a href="BitAND.htm">BitAND()</a> to examine the part you are interested in:
+		1 = Window exists
+		2 = Window is visible
+		4 = Window is enabled
+		8 = Window is active
+		16 = Window is minimized
+		32 = Window is maximized
+
+Failure:	0 and sets the @error flag to 1 if the window is not found.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+BitAND, WinGetPos, WinSetState
+
+
+###Example###
+@@IncludeExample@@

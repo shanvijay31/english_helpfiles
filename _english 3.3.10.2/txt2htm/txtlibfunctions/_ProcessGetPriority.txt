@@ -1,0 +1,40 @@
+###User Defined Function###
+_ProcessGetPriority
+
+###Description###
+Get the  priority of an open process
+
+###Syntax###
+#include <Process.au3>
+_ProcessGetPriority ( $i_PID )
+
+
+###Parameters###
+@@ParamTable@@
+$i_PID
+	Process ID (Int) of process to be examined.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	an integer corressponding to the processes's priority:
+		0 - Idle/Low
+		1 - Below Normal
+		2 - Normal
+		3 - Above Normal
+		4 - High
+		5 - Realtime
+Failure:	-1 and sets the @error flag to non-zero.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None.
+
+
+###Example###
+@@IncludeExample@@

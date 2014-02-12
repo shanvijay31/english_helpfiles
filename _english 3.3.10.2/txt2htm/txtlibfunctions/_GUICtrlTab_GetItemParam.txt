@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUICtrlTab_GetItemParam
+
+###Description###
+Retrieves the param data for a tab
+
+###Syntax###
+#include <GuiTab.au3>
+_GUICtrlTab_GetItemParam ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iIndex
+	0-based item index
+@@End@@
+
+###ReturnValue###
+Returns the tab param data.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlTab_SetItemParam
+
+
+###Example###
+@@IncludeExample@@

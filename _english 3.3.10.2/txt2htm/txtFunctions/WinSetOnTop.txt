@@ -1,0 +1,38 @@
+###Function###
+WinSetOnTop
+
+###Description###
+Change a window's  "Always On Top" attribute.
+
+###Syntax###
+WinSetOnTop ( "title", "text", flag )
+
+
+###Parameters###
+@@ParamTable@@
+title
+	The title/hWnd/class of the window to change. See <a href="../intro/windowsadvanced.htm">Title special definition</a>.
+text
+	The text of the window to change. See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.
+flag
+	Determines whether the window should have the "TOPMOST" flag set.
+	1=set on top flag, 0 = remove on top flag
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	1.
+Failure:	0 if window is not found.
+@@End@@
+
+
+###Remarks###
+Third-party programs which add an "Always On Top" context menu entry might not update their menu entry to reflect the AutoIt-induced change in TOPMOST status.
+
+
+###Related###
+WinSetState
+
+
+###Example###
+@@IncludeExample@@

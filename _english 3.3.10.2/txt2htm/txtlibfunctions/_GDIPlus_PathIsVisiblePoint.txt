@@ -1,0 +1,44 @@
+###User Defined Function###
+_GDIPlus_PathIsVisiblePoint
+
+###Description###
+Determines whether a specified point lies in the area that is filled when a path is filled by a specified Graphics object
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_PathIsVisiblePoint ( $hPath, $nX, $nY [, $hGraphics = 0] )
+
+
+###Parameters###
+@@ParamTable@@
+$hPath
+	Pointer to a GraphicsPath object
+$nX
+	X coordinate of the point to test
+$nY
+	Y coordinate of the point to test
+$hGraphics
+	[optional] Pointer to a Graphics object that specifies a world-to-device transformation. If 0, the test is
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True if the point lies in the interior of the path, False otherwise
+Failure:	sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None
+
+
+###See Also###
+@@MsdnLink@@ GdipIsVisiblePathPoint
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,38 @@
+###User Defined Function###
+_GDIPlus_RegionCreateFromPath
+
+###Description###
+Creates a region that is defined by a path object and has a fill mode that is contained in the path object
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_RegionCreateFromPath ( $hPath )
+
+
+###Parameters###
+@@ParamTable@@
+$hPath
+	Pointer to a GraphicsPath object that specifies the path
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a pointer to a new Region object.
+Failure:	0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+After you are done with the object, call <a href="_GDIPlus_RegionDispose.htm">_GDIPlus_RegionDispose()</a> to release the object resources.
+
+
+###Related###
+_GDIPlus_RegionDispose
+
+
+###See Also###
+@@MsdnLink@@ GdipCreateRegionPath
+
+
+###Example###
+@@IncludeExample@@

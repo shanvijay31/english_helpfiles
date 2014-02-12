@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUIToolTip_GetMarginEx
+
+###Description###
+Retrieves the top, left, bottom, and right margins of a ToolTip control
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_GetMarginEx ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+Returns a $tagRECT structure that will receive the margin information:
+	Top - Distance between top border and top of ToolTip text, in pixels
+	Left - Distance between left border and left end of ToolTip text, in pixels
+	Bottom - Distance between bottom border and bottom of ToolTip text, in pixels
+	Right - Distance between right border and right end of ToolTip text, in pixels
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUIToolTip_GetMargin, _GUIToolTip_ToolToArray
+
+###Example###
+@@IncludeExample@@

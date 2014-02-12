@@ -1,0 +1,51 @@
+###User Defined Function###
+_SQLite_Startup
+
+###Description###
+Loads SQLite3.dll
+
+###Syntax###
+#include <SQLite.au3>
+_SQLite_Startup ( [$sDll_Filename = "" [, $bUTF8ErrorMsg = False [, $iForceLocal = 0 [, $sPrintCallback = __SQLite_ConsoleWrite (  )]]]] )
+
+
+###Parameters###
+@@ParamTable@@
+$sDll_Filename
+	[optional] Dll filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.
+$bUTF8ErrorMsg
+	[optional] to force <a href="../functions/ConsoleWrite.htm">ConsoleWrite()</a> to display UTF8 chars
+$iForceLocal
+	[optional] 1 = use a the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.
+	0 = the DLL will be downloaded if not found in  @ScriptDir, @SystemDir, @WindowsDir or @WorkingDir.
+	-1 = force download
+$sPrintCallback
+	[optional] The string name of a user-defined callback function that is invoked when SQLite needs to display a diagnostic message.  See Remarks for more.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the path to the opened Dll file.
+Failure:	sets the @error flag to non-zero.
+@@End@@
+
+
+###Remarks###
+If #include <SQLite.dll.au3> is included the SQLite version is check. If older, download will occur.
+
+The downloaded file will be created in @SystemDir (may need #RequireAdmin).
+If the creation is not successfull a temporary file will be created which will be destroyed at <a href="_SQLite_Shutdown.htm">_SQLite_Shutdown()</a>.
+
+If $bUTF8ErrorMsg is not zero prints UTF8 formated string prints to console.
+This allows applications as SciTE to display those characters if configured with output.code.page=65001.
+This is the case when running SciTE under a non-english version as Vista(fr).
+
+The $sPrintCallback parameter specifies the name of user-defined callback function.  This function will be passed a single parameter which is the message to display.  The default callback function is __SQLite_ConsoleWrite().  See that function for an example of how to implement your own callback function.
+
+
+###Related###
+_SQLite_Shutdown
+
+
+###Example###
+@@IncludeExample@@

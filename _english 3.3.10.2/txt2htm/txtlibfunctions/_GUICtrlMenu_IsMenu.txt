@@ -1,0 +1,37 @@
+###User Defined Function###
+_GUICtrlMenu_IsMenu
+
+###Description###
+Determines whether a handle is a menu handle
+
+###Syntax###
+#include <GuiMenu.au3>
+_GUICtrlMenu_IsMenu ( $hMenu )
+
+
+###Parameters###
+@@ParamTable@@
+$hMenu
+	Handle to be tested
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the handle is a menu handle
+False:	the handle is not a menu handle
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+
+
+###See Also###
+@@MsdnLink@@ IsMenu
+
+
+###Example###
+@@IncludeExample@@

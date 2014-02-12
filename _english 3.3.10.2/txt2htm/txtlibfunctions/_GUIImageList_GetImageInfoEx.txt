@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUIImageList_GetImageInfoEx
+
+###Description###
+Retrieves information about an image
+
+###Syntax###
+#include <GuiImageList.au3>
+_GUIImageList_GetImageInfoEx ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the imagelist
+$iIndex
+	Index of the image
+@@End@@
+
+###ReturnValue###
+Returns a $tagIMAGEINFO structure that receives information about the image.
+
+
+###Remarks###
+None.
+
+
+###Related###
+$tagIMAGEINFO
+
+
+###Example###
+@@IncludeExample@@

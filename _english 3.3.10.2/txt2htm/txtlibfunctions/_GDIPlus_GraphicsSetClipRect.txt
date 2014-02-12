@@ -1,0 +1,54 @@
+###User Defined Function###
+_GDIPlus_GraphicsSetClipRect
+
+###Description###
+Updates the clipping region of a Graphics object to a region that is the combination of itself and a rectangle
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_GraphicsSetClipRect ( $hGraphics, $nX, $nY, $nWidth, $nHeight [, $iCombineMode = 0] )
+
+
+###Parameters###
+@@ParamTable@@
+$hGraphics
+	Pointer to a Graphics object
+$nX
+	X coordinate of the upper-left corner of the rectangle
+$nY
+	Y coordinate of the upper-left corner of the rectangle
+$nWidth
+	Width of the rectangle
+$nHeight
+	Height of the rectangle
+$iCombineMode
+	[optional] Regions combination mode:
+		0 - The existing region is replaced by the new region
+		1 - The existing region is replaced by the intersection of itself and the new region
+		2 - The existing region is replaced by the union of itself and the new region
+		3 - The existing region is replaced by the result of performing an XOR on the two regions
+		4 - The existing region is replaced by the portion of itself that is outside of the new region
+		5 - The existing region is replaced by the portion of the new region that is outside of the existing region
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None
+
+
+###See Also###
+@@MsdnLink@@ GdipSetClipRect
+
+
+###Example###
+@@IncludeExample@@

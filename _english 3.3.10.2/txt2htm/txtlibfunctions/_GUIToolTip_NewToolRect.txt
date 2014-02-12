@@ -1,0 +1,39 @@
+###User Defined Function###
+_GUIToolTip_NewToolRect
+
+###Description###
+Sets a new bounding rectangle for a tool
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_NewToolRect ( $hWnd, $hTool, $iID, $iLeft, $iTop, $iRight, $iBottom )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+$hTool
+	Handle of the window that contains the tool, or 0
+$iID
+	Identifier of the tool, or Window handle of the control the tool is to be assigned to
+$iLeft
+	X coordinate of the upper left corner of the rectangle
+$iTop
+	Y coordinate of the upper left corner of the rectangle
+$iRight
+	X coordinate of the lower right corner of the rectangle
+$iBottom
+	Y coordinate of the lower right corner of the rectangle
+@@End@@
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUIToolTip_AdjustRect

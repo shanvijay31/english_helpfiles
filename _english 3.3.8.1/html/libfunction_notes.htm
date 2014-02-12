@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Function Notes</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<H1>User Defined Function Notes</H1>
+
+  
+<p>We have included number of files that each contain standard AutoIt3 Functions, so called <span class="style1">U</span>ser <span class="style1">D</span>efined <span class="style1">F</span>unctions.<br> 
+UDF's are functions/Scriptlets, written in AutoIt3, you can #include in your own script and use them  without the need to program it yourself or  Copy&amp;Paste them every time you need them.</p>
+<p>Example:<br>
+</p>
+    <p class="codebox">#include &lt;date.au3&gt;<br>
+      MsgBox(0,&quot;Today&quot;,&quot;Today's date is &quot; &amp; 
+      _Now())</p>
+<p>This script will display today's date formatted in your pc's long format. e.g. &quot;Sunday, December 18, 2004&quot; </p>
+<p>&nbsp;</p>
+<p>Many UDF's contain optional parameters that can be omitted.&nbsp; If you 
+  wish to specify an optional parameter, however, all parameters that precede 
+  it must be specified! <br>
+  For example, consider <i><a href="libfunctions/_ArraySort.htm">_ArraySort</a> </i>
+( ByRef $a_Array [, $i_Descending [, $i_Base=0 [, $i_Ubound=0 [, $i_Dim=1 [, 
+$i_SortIndex=0 ]]]]] )<BR> 
+  When a parameters  is preceded with Byref mean that the function will update this variable with a new value. These parameters must be a variable ($xyz) and cannot be a constant. <br>
+</p>
+<p>Most  UDF's indicate success/failure as a <b>return value</b>; others indicate 
+  it by setting the <b>@error flag</b>.&nbsp; Some do both....<br>
+  @error = 0 ;is always success<br>
+  Return = varies, but is typically non-zero for success to allow easy to read 
+  code...<br>
+  <br>
+  <b>If a function can set the @error flag, you should always check it before 
+  using a return value - if @error indicates an error then the function return 
+  value is generally undefined...</b><br>
+</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<p><img src="images/blue_gradient_1024x24.jpg" width="1024" height="1" alt=""></p>
+</html>

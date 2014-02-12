@@ -1,0 +1,38 @@
+###User Defined Function###
+_GUICtrlHeader_SetItemImage
+
+###Description###
+Sets the index of an image within the image list
+
+###Syntax###
+#include <GuiHeader.au3>
+_GUICtrlHeader_SetItemImage ( $hWnd, $iIndex, $iImage )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+$iIndex
+	0-based item index
+$iImage
+	0-based image index
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlHeader_GetItemImage
+
+
+###Example###
+@@IncludeExample@@

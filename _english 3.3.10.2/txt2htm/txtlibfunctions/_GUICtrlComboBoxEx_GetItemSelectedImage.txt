@@ -1,0 +1,36 @@
+###User Defined Function###
+_GUICtrlComboBoxEx_GetItemSelectedImage
+
+###Description###
+Retrieves the index of the item's selected image icon
+
+###Syntax###
+#include <GuiComboBoxEx.au3>
+_GUICtrlComboBoxEx_GetItemSelectedImage ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+$iIndex
+	0-based item index
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a 0-based item selected image index.
+Failure:	-1.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlComboBoxEx_SetItemSelectedImage
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,33 @@
+###Function###
+GUIDelete
+
+###Description###
+Deletes a GUI window and all controls that it contains.
+
+###Syntax###
+GUIDelete ( [winhandle] )
+
+
+###Parameters###
+@@ParamTable@@
+winhandle
+	[optional] Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	1.
+Failure:	0.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+GUICreate, GUISwitch
+
+
+###Example###
+@@IncludeExample@@

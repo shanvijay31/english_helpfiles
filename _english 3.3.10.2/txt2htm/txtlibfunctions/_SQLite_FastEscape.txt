@@ -1,0 +1,38 @@
+###User Defined Function###
+_SQLite_FastEscape
+
+###Description###
+Fast escapes a string or number for use as TEXT in SQLite statements
+
+###Syntax###
+#include <SQLite.au3>
+_SQLite_FastEscape ( $sString )
+
+
+###Parameters###
+@@ParamTable@@
+$sString
+	string to escape
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	an escaped string.
+Failure:	an empty string and sets the @error flag to non-zero.
+@error:	1 - Data is not a string or a numeric
+@@End@@
+
+
+###Remarks###
+The escaped string is wrapped with single quotes.
+For example "It's a fine day" is turned into "'It''s a fine day'".
+For binary data use <a href="_SQLite_Encode.htm">_SQLite_Encode()</a>.
+For numeric values to be stored as such, use simple concatenation.
+
+
+###Related###
+_SQLite_Encode, _SQLite_Escape
+
+
+###Example###
+@@IncludeExample@@

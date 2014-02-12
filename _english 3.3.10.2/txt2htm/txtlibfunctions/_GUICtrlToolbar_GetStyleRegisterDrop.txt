@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUICtrlToolbar_GetStyleRegisterDrop
+
+###Description###
+Indicates that the control generates TBN_GETOBJECT notification messages
+
+###Syntax###
+#include <GuiToolbar.au3>
+_GUICtrlToolbar_GetStyleRegisterDrop ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	style is present.
+False:	style is not present.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlToolbar_SetStyleRegisterDrop
+
+
+###Example###
+@@IncludeExample@@

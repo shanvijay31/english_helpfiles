@@ -1,0 +1,42 @@
+###User Defined Function###
+_GDIPlus_BitmapCreateFromGraphics
+
+###Description###
+Creates a Bitmap object based on a Graphics object, a width, and a height
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_BitmapCreateFromGraphics ( $iWidth, $iHeight, $hGraphics )
+
+
+###Parameters###
+@@ParamTable@@
+$iWidth
+	Specifies the width, in pixels, of the bitmap
+$iHeight
+	Specifies the height, in pixels, of the bitmap
+$hGraphics
+	Handle to a Graphics object
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a handle to a Bitmap object Q .
+Failure:	0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+When you are done with the Bitmap object, call <a href="_GDIPlus_BitmapDispose.htm">_GDIPlus_BitmapDispose()</a> to release the resources.
+
+
+###Related###
+_GDIPlus_BitmapDispose
+
+
+###See Also###
+@@MsdnLink@@ GdipCreateBitmapFromGraphics
+
+
+###Example###
+@@IncludeExample@@

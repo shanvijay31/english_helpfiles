@@ -1,0 +1,30 @@
+###User Defined Function###
+_GUIToolTip_Pop
+
+###Description###
+Removes a displayed ToolTip from view
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_Pop ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUIToolTip_PopUp
+
+###Example###
+@@IncludeExample@@

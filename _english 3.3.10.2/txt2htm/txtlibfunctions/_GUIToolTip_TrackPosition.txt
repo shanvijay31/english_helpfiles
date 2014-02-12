@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUIToolTip_TrackPosition
+
+###Description###
+Sets the position of a tracking ToolTip
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_TrackPosition ( $hWnd, $iX, $iY )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+$iX
+	X position in screen coordinates
+$iY
+	Y position in screen coordinates
+@@End@@
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+The ToolTip will display the window based on the coordinates you provide with this message.
+You must use _GUIToolTip_TrackActivate in combination with _GUIToolTip_TrackPosition otherwise this function has no effect on the ToolTip.
+
+###Related###
+_GUIToolTip_TrackActivate
+
+###Example###
+@@IncludeExample@@

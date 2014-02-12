@@ -1,0 +1,29 @@
+###User Defined Function###
+_SQLite_Shutdown
+
+###Description###
+Unloads SQLite.dll
+
+###Syntax###
+#include <SQLite.au3>
+_SQLite_Shutdown (  )
+
+
+###Parameters###
+None.
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+If <a href="_SQLite_Startup.htm">_SQLite_Startup()</a> failed or was not executed, an AutoIt runtime error will be thrown, and the script will terminate!
+AutoIt automatically closes any dlls it opened, but calling <a href="_SQLite_Shutdown.htm">_SQLite_Shutdown()</a> is still a good idea.
+
+
+###Related###
+_SQLite_Startup
+
+
+###Example###
+@@IncludeExample@@

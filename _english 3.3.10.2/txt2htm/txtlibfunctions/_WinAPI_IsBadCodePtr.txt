@@ -1,0 +1,33 @@
+###User Defined Function###
+_WinAPI_IsBadCodePtr
+
+###Description###
+Determines whether the calling process has read access to the memory at the specified address.
+
+###Syntax###
+#include <WinAPISys.au3>
+_WinAPI_IsBadCodePtr ( $pAddress )
+
+
+###Parameters###
+@@ParamTable@@
+$pAddress
+	A pointer to a memory address.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the calling process does not have read access to the specified memory.
+False:	the calling process have read access, call _WinAPI_GetLastError() to get extended error information.
+@@End@@
+
+
+###Remarks###
+None
+
+
+###Related###
+
+
+###See Also###
+@@MsdnLink@@ IsBadCodePtr

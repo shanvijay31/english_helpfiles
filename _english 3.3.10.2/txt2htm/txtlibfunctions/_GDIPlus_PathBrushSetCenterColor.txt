@@ -1,0 +1,40 @@
+###User Defined Function###
+_GDIPlus_PathBrushSetCenterColor
+
+###Description###
+Sets the color of the center point of a path gradient brush
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_PathBrushSetCenterColor ( $hPathGradientBrush, $iARGB )
+
+
+###Parameters###
+@@ParamTable@@
+$hPathGradientBrush
+	Pointer to a PathGradientBrush object
+$iARGB
+	Alpha, Red, Green and Blue components of the new center color
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None
+
+
+###See Also###
+@@MsdnLink@@ GdipSetPathGradientCenterColor
+
+
+###Example###
+@@IncludeExample@@

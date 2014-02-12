@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUICtrlListView_GetGroupViewEnabled
+
+###Description###
+Checks whether the control has group view enabled
+
+###Syntax###
+#include <GuiListView.au3>
+_GUICtrlListView_GetGroupViewEnabled ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the group view is enabled.
+False:	the group view is not enabled.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlListView_EnableGroupView
+
+
+###Example###
+@@IncludeExample@@

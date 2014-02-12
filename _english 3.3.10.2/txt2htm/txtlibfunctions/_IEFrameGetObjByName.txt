@@ -1,0 +1,41 @@
+###User Defined Function###
+_IEFrameGetObjByName
+
+###Description###
+Returns an object reference to a Frame or iFrame by name.
+
+###Syntax###
+#include <IE.au3>
+_IEFrameGetObjByName ( ByRef $o_object, $s_name )
+
+
+###Parameters###
+@@ParamTable@@
+$o_object
+	Object variable of an InternetExplorer.Application, Window or Frame object
+$s_name
+	Name of the Frame you wish to match
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	an object variable pointing to the Window object in a Frame, @extended = Frame count.
+Failure:	sets the @error flag to non-zero.
+@error:	3 ($_IEStatus_InvalidDataType) - Invalid Data Type
+	4 ($_IEStatus_InvalidObjectType) - Invalid Object Type
+	7 ($_IEStatus_NoMatch) - No Match
+@extended:	Contains invalid parameter number
+@@End@@
+
+
+###Remarks###
+The object returned by this function is a window object which allows access to the document contained within.
+You may also want to access the frame or iframe tag and its properties - to do this, use <a href="_IETagNameGetCollection.htm">_IETagNameGetCollection()</a>.
+
+
+###Related###
+_IEFrameGetCollection
+
+
+###Example###
+@@IncludeExample@@

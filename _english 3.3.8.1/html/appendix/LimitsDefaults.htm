@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Limits Defaults</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="../css/default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>AutoIt3 Limits/defaults</h1>
+<br>
+<table border="1" style="width: 100%;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0" height="496">
+  <tr style="color: rgb(255, 255, 255);">
+    <th style="background-color: rgb(0, 0, 153); width: 20%;" height="16">AutoIt3 limits</th>
+    <th style="background-color: rgb(0, 0, 153); width: 10%;" height="16">Value</th>
+    <th style="background-color: rgb(0, 0, 153);" height="16"><b>Description</b></th>
+  </tr>
+  <tr>
+    <td height="16">MAX_LINESIZE</td>
+    <td align="right" height="16">4095 </td>
+    <td height="16">Maximum size for a line of script.</td>
+  </tr>
+  <tr>
+    <td height="16">MAX_ENVSIZE</td>
+    <td align="right" height="16">32767</td>
+    <td height="16">Maximum size for an ENV variable. </td>
+  </tr>
+  <tr>
+    <td height="16">WINTEXTBUFFER</td>
+    <td align="right" height="16">32767 </td>
+    <td height="16">GetWindowText fails under 95 if&gt;65535, WM_GETTEXT randomly fails if &gt;
+    32767.</td>
+  </tr>
+  <tr>
+    <td height="8">MAXCALLRECURSE </td>
+    <td align="right" height="8">5100 </td>
+    <td height="8">Maximum number of times the Call() function can recurse to itself.</td>
+  </tr>
+  <tr>
+    <td height="16">MAXEXECUTERECURSE </td>
+    <td align="right" height="16">5100</td>
+    <td height="16">Maximum number of times the Execute() function can recurse to itself.</td>
+  </tr>
+  <tr>
+    <td height="16">GUI_MAXCONTROLS</td>
+    <td align="right" height="16">65532</td>
+    <td height="16">Maximum number of controls in GUI box. </td>
+  </tr>
+  <tr>
+    <td height="16">GUI_MAXPOINTS</td>
+    <td align="right" height="16">256</td>
+    <td height="16">Maximum number of points by graphic info page.</td>
+  </tr>
+  <tr>
+    <td height="16">COM_MAXEVENT </td>
+    <td align="right" height="16">64 </td>
+    <td height="16">Maximum number of COM events that can be buffered. </td>
+  </tr>
+  <tr>
+    <td height="16">VAR_SUBSCRIPT_MAX</td>
+    <td align="right" height="16">64 </td>
+    <td height="16">Maximum number of subscripts for an array. </td>
+  </tr>
+  <tr>
+    <td height="16">MAIN_TIMER_DELAY</td>
+    <td align="right" height="16">750 ms </td>
+    <td height="16">Tray icon hiding/flashing/drawing is checked every 750ms. </td>
+  </tr>
+  <tr>
+    <td height="16">CMDLINEPARAM_MAXLEN</td>
+    <td align="right" height="16">4096</td>
+    <td height="16">Each parameter can be this many characters.</td>
+  </tr>
+  <tr>
+    <td height="16">TRAY_MAXITEMS</td>
+    <td align="right" height="16">505</td>
+    <td height="16">Maximum number of items in the tray menu.</td>
+  </tr>
+  <tr>
+    <td height="16">TRAY_MAXEVENT </td>
+    <td align="right" height="16">32 </td>
+    <td height="16">Maximum number of events that can be buffered. </td>
+  </tr>
+  <tr>
+    <td height="16">TRAY_TOOLTIPWIDTH</td>
+    <td align="right" height="16">64</td>
+    <td height="16">Maximum number of characters displayed in a tray tooltip.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" style="width: 100%;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 20%;">Default</th>
+  <th style="background-color: rgb(0, 0, 153); width: 10%;">Value</th>
+  <th style="background-color: rgb(0, 0, 153);"><b>Description</b></th>
+</tr>
+<tr>
+  <td>ADLIB delay</td>
+  <td align="right">250 ms</td>
+  <td>Default delay in ms between ADLIB triggers. Can be defined in <a href="../functions/AdlibRegister.htm">AdlibRegister()</a>.</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td align="right">&nbsp;</td>
+  <td>Following defaults can be changed with <a href="../functions/AutoItSetOption.htm">Opt()</a></td>
+</tr>
+<tr>
+  <td>MouseClickDelay</td>
+  <td align="right">10 ms</td>
+  <td>Time between mouse clicks.</td>
+</tr>
+<tr>
+  <td>MouseClickDownDelay</td>
+  <td align="right">10 ms</td>
+  <td>Time the click is held down.</td>
+</tr>
+<tr>
+  <td>MouseClickDragDelay</td>
+  <td align="right">250 ms</td>
+  <td>The delay at the start and end of a drag operation.</td>
+</tr>
+<tr>
+  <td>TCPTimeout</td>
+  <td align="right">100 ms</td>
+  <td>Time after a TCP function is aborted.</td>
+</tr>
+</table>
+</body>
+</html>

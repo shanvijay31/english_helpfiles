@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>UDFs renaming</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>UDFs renaming</h1>
+Starting with v3.2.9.3&nbsp; _GUICtrlXXXYYY() have been renamed
+_GUICtrlXXX_YYY() without any functional changes except stated in the below
+table.<p>For XXX equal to &quot;Combo&quot; and &quot;List&quot;&nbsp; these 
+have been changed to &quot;ComboBox&quot;
+and &quot;ListBox&quot;. They can be found in GuiComboBox.au3 and GuiListBox.au3. So the
+#include file will have to be changed too.</p>
+<p><br>
+</p>
+<table border="1" style="width: 830;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+  <tr style="color: rgb(255, 255, 255);">
+    <th style="background-color: rgb(0, 0, 153); width: 193;">Old</th>
+    <th style="background-color: rgb(0, 0, 153); width: 226;">New</th>
+    <th style="background-color: rgb(0, 0, 153);" width="385">Comments</th>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboAddDir</td>
+    <td>_GUICtrlComboBox_AddDir</td>
+    <td>parameters inversion and $vAttrib-&gt;$iAttrib.</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboAutoComplete</td>
+    <td>_GUICtrlComboBox_AutoComplete</td>
+    <td>$sText, $s_WTitle, $s_WText parameters ignored.</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboFindString</td>
+    <td>_GUICtrlComboBox_FindString</td>
+    <td>or _GUICtrlComboBox_FindStringExact if $fexact was&nbsp;
+    used.</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboGetList</td>
+    <td>_GUICtrlComboBox_GetList</td>
+    <td>$sDelimiter suppress use Opt(&quot;GUIDataSeparatorChar&quot;).</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboInsertString</td>
+    <td>_GUICtrlComboBox_InsertString</td>
+    <td>parameters inversion.</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboSelectString</td>
+    <td>_GUICtrlComboBox_SelectString</td>
+    <td>parameters inversion.</td>
+  </tr>
+  <tr>
+    <td>_GUICtrlComboSetItemHeight</td>
+    <td>_GUICtrlComboBox_SetItemHeight</td>
+    <td >parameters inversion.</td>
+  </tr>
+  </table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 193;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 226;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="386">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlEditFind</td>
+    <td>_GUICtrlEdit_Find</td>
+    <td>$hGui parameter removed</td>
+  </tr>
+<tr>
+    <td>_GUICtrlEditFindText</td>
+    <td>&nbsp;</td>
+    <td>OBSOLETE</td>
+  </tr>
+<tr>
+    <td>_GUICtrlEditGetRECT</td>
+    <td>_GUICtrlEdit_GetRECT</td>
+    <td>return modified.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlEditGetSel</td>
+    <td>_GUICtrlEdit_GetSel</td>
+    <td>return modified.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlEditSetRECT</td>
+    <td>_GUICtrlEdit_SetRECT</td>
+    <td>return modified.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 193;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 226;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="386">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlIpAddressClear</td>
+    <td>_GUICtrlIpAddress_ClearAddress</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlIpAddressDelete</td>
+    <td>_GUICtrlIpAddress_Destroy</td>
+    <td>renamed.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 193;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 226;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="386">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlListAddDir</td>
+    <td>_GUICtrlListBox_Dir</td>
+    <td>parameters inversion and $vAttrib-&gt;$iAttrib.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListAddItem</td>
+    <td>_GUICtrlListBox_AddString</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListClear</td>
+    <td>_GUICtrlListBox_ResetContent</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListCount</td>
+    <td>_GUICtrlListBox_GetCount</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListDeleteItem</td>
+    <td>_GUICtrlListBox_DeleteString</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListGetInfo</td>
+    <td>_GUICtrlListBox_GetListBoxInfo</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListGetItemRect</td>
+    <td>_GUICtrlListBox_GetItemRect</td>
+    <td>return modified.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListGetLocale</td>
+    <td>_GUICtrlListBox_GetLocale</td>
+    <td>$fDec ignored.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListGetSelState</td>
+    <td>_GUICtrlListBox_GetSel</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListInsertItem</td>
+    <td>_GUICtrlListBox_InsertString</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListSelectedIndex</td>
+    <td>_GUICtrlListBox_GetCurSel</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListSelectIndex</td>
+    <td>_GUICtrlListBox_SetCurSel</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListSelItemRange</td>
+    <td>_GUICtrlListBox_SelItemRange</td>
+    <td>parameters inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListSetSel</td>
+    <td>_GUICtrlListBox_SetSel</td>
+    <td>parameters inversion.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0" height="315">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 193;" height="19">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 226;" height="19">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="386" height="19">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlListViewFindItem</td>
+    <td>_GUICtrlListView_FindInText</td>
+    <td>_GUICtrlListView_FindItem,
+    _GUICtrlListView_FindNearest, _GUICtrlListView_FindParam,
+    _GUICtrlListView_FindText</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetBackColor </td>
+    <td>_GUICtrlListView_GetBkColor</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetCheckedState</td>
+    <td>_GUICtrlListView_GetItemChecked</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetCurSel</td>
+    <td>_GUICtrlListView_GetNextItem</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetItemText</td>
+    <td>_GUICtrlListView_GetItemText</td>
+    <td>item is mandatory or
+    _GUICtrlListView_GetItemTextString</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetNextItem</td>
+    <td>_GUICtrlListView_GetNextItem</td>
+    <td>$i_direction parameter changed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewGetSubItemsCount</td>
+    <td>_GUICtrlListView_GetColumnCount</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewInsertColumn</td>
+    <td>_GUICtrlListView_InsertColumn</td>
+    <td>optional parameters inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewInsertItem</td>
+    <td>_GUICtrlListView_InsertItem</td>
+    <td>_GUICtrlListView_SetItemText&nbsp; for column &gt;1</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSetColumnHeaderText</td>
+    <td>_GUICtrlListView_SetColumn</td>
+    <td>parameters inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSetColumnOrder</td>
+    <td>_GUICtrlListView_SetColumnOrder</td>
+    <td>$order must be split.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSetCheckState</td>
+    <td>_GUICtrlListView_SetItemChecked</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSetItemSelState</td>
+    <td>_GUICtrlListView_SetItemSelected</td>
+    <td>&nbsp;or _GUICtrlListView_SetItemFocused.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSetItemText</td>
+    <td>_GUICtrlListView_SetItemText</td>
+    <td>parameters inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlListViewSort</td>
+    <td>_GUICtrlListView_SimpleSort</td>
+    <td>renamed.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 193;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 226;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="386">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlMonthCalGet1stDOW</td>
+    <td>_GUICtrlMonthCal_GetFirstDOWStr</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlMonthCalGetColor</td>
+    <td>_GUICtrlMonthCal_GetColorArray</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlMonthCalGetMinReqRECT</td>
+    <td>_GUICtrlMonthCalGetMinReqRECT</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlMonthCalSetColor</td>
+    <td>_GUICtrlMonthCal_SetColor</td>
+    <td>return modified.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlMonthCalSet1stDOW</td>
+    <td>_GUICtrlMonthCal_SetFirstDOW</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlMonthCalSetDelta</td>
+    <td>_GUICtrlMonthCal_SetMonthDelta</td>
+    <td>renamed.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 832;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 229;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 235;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="342">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlStatusBarCreateProgress</td>
+    <td>&nbsp;</td>
+    <td>OBSOLETE</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarDelete</td>
+    <td>_GUICtrlStatusBar_Destroy</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarGetParts</td>
+    <td>_GUICtrlStatusBar_GetCount</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarGetTip</td>
+    <td>_GUICtrlStatusBar_GetTipText</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarGetUnicode</td>
+    <td>_GUICtrlStatusBar_GetUnicodeFormat</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarSetIcon</td>
+    <td>_GUICtrlStatusBar_SetIcon</td>
+    <td>optional parameters inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarSetParts</td>
+    <td>_GUICtrlStatusBar_SetParts</td>
+    <td>$hGUI parameter suppression.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlStatusBarSetUnicode</td>
+    <td>_GUICtrlStatusBar_SetUnicodeFormat</td>
+    <td>renamed.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 831;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 228;">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 241;">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="336">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlTabGetItemRECT</td>
+    <td>_GUICtrlTab_GetItemRect</td>
+    <td>return modified.</td>
+  </tr>
+</table>
+<br>
+<table border="1" style="width: 832;" cellspacing="0" cellpadding="3" bordercolor="#c0c0c0" height="162">
+<tr style="color: rgb(255, 255, 255);">
+  <th style="background-color: rgb(0, 0, 153); width: 217;" height="19">Old</th>
+  <th style="background-color: rgb(0, 0, 153); width: 251;" height="19">New</th>
+  <th style="background-color: rgb(0, 0, 153);" width="338" height="19">Comments</th>
+</tr>
+<tr>
+    <td>_GUICtrlTreeViewDeleteAllItems</td>
+    <td>_GUICtrlTreeView_DeleteAll</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlTreeViewDeleteItem</td>
+    <td>_GUICtrlTreeView_Delete</td>
+    <td>$hGUI parameter removed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlTreeViewExpand</td>
+    <td>_GUICtrlTreeView_Expand</td>
+    <td>optional parameter inversion.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlTreeViewGetParentID</td>
+    <td>_GUICtrlTreeView_GetParentParam</td>
+    <td>renamed.</td>
+  </tr>
+<tr>
+    <td>_GUICtrlTreeViewGetTree</td>
+    <td>_GUICtrlTreeView_GetTree</td>
+    <td>$sSeparator suppress use Opt(&quot;GUIDataSeparatorChar&quot;).</td>
+  </tr>
+</table>
+&nbsp;</body></html>

@@ -1,0 +1,41 @@
+###Function###
+Dec
+
+###Description###
+Returns a numeric representation of a hexadecimal string.
+
+###Syntax###
+Dec ( "hex" [, flag ] )
+
+
+###Parameters###
+@@ParamTable@@
+hex
+	The hexadecimal string to convert.
+flag
+	[optional] Defines behavior.
+	Can be one of the following:
+	  Default = string is interpretted as integer. See remarks.
+	  1 = string is interpretted as 32bit integer
+	  2 = string is interpretted as 64bit integer
+	  3 = string is interpretted as double
+@@End@@
+
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	Returns required data.
+Failure:	Returns 0 sets @error to 1 an invalid hex string was used or if an overflow occurs.
+@@End@@
+
+
+###Remarks###
+Default behavior is that input string is treated as integer. In this case if the result is within range of 32bit integer, it's returned as 32bit integer and if not it's returned as 64bit integer. Both signed.
+
+
+###Related###
+Hex
+
+
+###Example###
+@@IncludeExample@@

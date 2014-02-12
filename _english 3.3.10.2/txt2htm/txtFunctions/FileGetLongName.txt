@@ -1,0 +1,35 @@
+###Function###
+FileGetLongName
+
+###Description###
+Returns the long path+name of the path+name passed.
+
+###Syntax###
+FileGetLongName ( "filename" [, flag = 0] )
+
+
+###Parameters###
+@@ParamTable@@
+filename
+	Full path and file name to convert
+flag
+	[optional] if 1 file can have relative dir, e.g. "..\file.txt"
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the long path+name of the path+name passed.
+Failure:	the parameter and sets the @error flag to 1.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+FileGetShortName
+
+
+###Example###
+@@IncludeExample@@

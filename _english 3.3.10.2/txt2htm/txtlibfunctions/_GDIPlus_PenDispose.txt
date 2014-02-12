@@ -1,0 +1,38 @@
+###User Defined Function###
+_GDIPlus_PenDispose
+
+###Description###
+Release a pen object
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_PenDispose ( $hPen )
+
+
+###Parameters###
+@@ParamTable@@
+$hPen
+	Handle to a pen object
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GDIPlus_PenCreate
+
+
+###See Also###
+@@MsdnLink@@ GdipDeletePen
+
+
+###Example###
+@@IncludeExample@@

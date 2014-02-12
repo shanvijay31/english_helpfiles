@@ -1,0 +1,44 @@
+###User Defined Function###
+_GDIPlus_ArrowCapCreate
+
+###Description###
+Creates an adjustable arrow line cap with the specified height and width
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_ArrowCapCreate ( $fHeight, $fWidth [, $bFilled = True] )
+
+
+###Parameters###
+@@ParamTable@@
+$fHeight
+	Specifies the length, in units, of the arrow from its base to its point
+$fWidth
+	Specifies the distance, in units, between the corners of the base of the arrow
+$bFilled
+	[optional] Fill flag:
+		True - Arrow will be filled
+		False - Arrow will not be filled
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a handle to a new arrowCap object.
+Failure:	sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+After you are done with the object, call <a href="_GDIPlus_ArrowCapDispose.htm">_GDIPlus_ArrowCapDispose()</a> to release the object resources.
+
+
+###Related###
+_GDIPlus_ArrowCapDispose
+
+
+###See Also###
+@@MsdnLink@@ GdipCreateAdjustableArrowCap
+
+
+###Example###
+@@IncludeExample@@

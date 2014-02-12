@@ -1,0 +1,30 @@
+###User Defined Function###
+_GUIToolTip_GetToolCount
+
+###Description###
+Returns the count of tools maintained by the ToolTip control.
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_GetToolCount ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+@@End@@
+
+###ReturnValue###
+Returns the count of tools maintained by the ToolTip control.
+
+
+###Remarks###
+None.
+
+
+###Related###
+None.
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,33 @@
+###User Defined Function###
+_WinAPI_SfcIsFileProtected
+
+###Description###
+Determines whether the specified file is protected.
+
+###Syntax###
+#include <WinAPIFiles.au3>
+_WinAPI_SfcIsFileProtected ( $sFile )
+
+
+###Parameters###
+@@ParamTable@@
+$sFile
+	The name of the file to test.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the file is protected.
+False:	the file is not protected.
+@@End@@
+
+
+###Remarks###
+None
+
+
+###Related###
+
+
+###See Also###
+@@MsdnLink@@ SfcIsFileProtected

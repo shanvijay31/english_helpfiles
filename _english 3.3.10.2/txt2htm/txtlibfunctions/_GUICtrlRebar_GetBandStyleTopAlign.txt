@@ -1,0 +1,36 @@
+###User Defined Function###
+_GUICtrlRebar_GetBandStyleTopAlign
+
+###Description###
+Determine if band top align flag is set
+
+###Syntax###
+#include <GuiReBar.au3>
+_GUICtrlRebar_GetBandStyleTopAlign ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the rebar control
+$iIndex
+	0-based index of the band
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the flag is set (Keep band in top row).
+False:	the flag not set.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlRebar_SetBandStyleTopAlign, _GUICtrlRebar_GetBandStyle
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,33 @@
+###User Defined Function###
+_WinAPI_PathIsSystemFolder
+
+###Description###
+Determines if an existing folder contains the attributes that make it a system folder.
+
+###Syntax###
+#include <WinAPIShPath.au3>
+_WinAPI_PathIsSystemFolder ( $sPath )
+
+
+###Parameters###
+@@ParamTable@@
+$sPath
+	The name of an existing folder to check the system folder attributes.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	the path is a system folder.
+False:	the path is not a system folder.
+@@End@@
+
+
+###Remarks###
+None
+
+
+###Related###
+
+
+###See Also###
+@@MsdnLink@@ PathIsSystemFolder

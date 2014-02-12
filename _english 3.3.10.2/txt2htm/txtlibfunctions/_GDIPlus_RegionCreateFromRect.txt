@@ -1,0 +1,44 @@
+###User Defined Function###
+_GDIPlus_RegionCreateFromRect
+
+###Description###
+Creates a region that is defined by a rectangle
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_RegionCreateFromRect ( $nX, $nY, $nWidth, $nHeight )
+
+
+###Parameters###
+@@ParamTable@@
+$nX
+	The X coordinate of the upper left corner of the rectangle
+$nY
+	The Y coordinate of the upper left corner of the rectangle
+$nWidth
+	The width of the rectangle
+$nHeight
+	The height of the rectangle
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a handle to a new Region object.
+Failure:	0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+After you are done with the object, call <a href="_GDIPlus_RegionDispose.htm">_GDIPlus_RegionDispose()</a> to release the object resources.
+
+
+###Related###
+_GDIPlus_RegionDispose
+
+
+###See Also###
+@@MsdnLink@@ GdipCreateRegionRect
+
+
+###Example###
+@@IncludeExample@@

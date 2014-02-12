@@ -1,0 +1,38 @@
+###User Defined Function###
+_INetMail
+
+###Description###
+Opens default user's mail client with given address, subject, and body.
+
+###Syntax###
+#include <Inet.au3>
+_INetMail ( $s_MailTo, $s_MailSubject, $s_MailBody )
+
+
+###Parameters###
+@@ParamTable@@
+$s_MailTo
+	Address for the E-Mail
+$s_MailSubject
+	Subject for the E-Mail
+$s_MailBody
+	Body for the E-Mail
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the process identifier for the E-Mail client.
+Failure:	0 and sets the @error flag to non-zero.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_INetSmtpMail
+
+
+###Example###
+@@IncludeExample@@

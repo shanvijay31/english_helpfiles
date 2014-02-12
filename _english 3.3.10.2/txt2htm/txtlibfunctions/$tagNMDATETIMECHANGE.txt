@@ -1,0 +1,29 @@
+###Structure Name###
+$tagNMDATETIMECHANGE
+
+###Description###
+Contains information about a change that has taken place in a date and time picker (DTP) control
+
+###Syntax###
+Global Const $tagNMDATETIMECHANGE = $tagNMHDR & ";int Flag;" & $tagSYSTEMTIME
+
+
+###Fields###
+@@ParamTable@@
+$tagNMHDR
+	Contains information about a notification message.
+Flag
+	Indicates if the control is set to "no date" status. This flag also specifies whether the contents
+	of the date are valid and contain current time information. This value can be one of the following:
+		$GDT_NONE - The control is set to "no date" status
+		$GDT_VALID - The control is not set to the "no date" status
+$tagSYSTEMTIME
+	Contains information about the current system date and time.
+@@End@@
+
+###Remarks###
+This structure is used with the $DTN_DATETIMECHANGE notification message.
+
+
+##Related##
+$tagNMHDR, $tagSYSTEMTIME

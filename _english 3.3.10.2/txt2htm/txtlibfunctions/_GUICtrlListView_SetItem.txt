@@ -1,0 +1,48 @@
+###User Defined Function###
+_GUICtrlListView_SetItem
+
+###Description###
+Sets some or all of a item's attributes
+
+###Syntax###
+#include <GuiListView.au3>
+_GUICtrlListView_SetItem ( $hWnd, $sText [, $iIndex = 0 [, $iSubItem = 0 [, $iImage = -1 [, $iParam = -1 [, $iIndent = -1]]]]] )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$sText
+	Item text. See remark.
+$iIndex
+	[optional] The 0-based index of the item
+$iSubItem
+	[optional] 1-based index of the subitem or zero if this refers to an item
+$iImage
+	[optional] 0-base index of the item's icon in the control's image list
+$iParam
+	[optional] Value specific to the item
+$iIndent
+	[optional] Number of image widths to indent the item. A single indentation equals the width of an image.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False.
+@@End@@
+
+
+###Remarks###
+If a notification callback is needed, you have to specify $sText = -1 (LPSTR_TEXTCALLBACK).
+
+As AutoIt uses the $iParam parameter to store the ControlID of native-created ListView items, this value should be set sufficiently high for UDF-created items to avoid possible conflict with any existing controls - a starting value of 1000 is recommended.
+
+
+###Related###
+_GUICtrlListView_GetItem, _GUICtrlListView_SetItemEx
+
+
+###Example###
+@@IncludeExample@@

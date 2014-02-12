@@ -1,0 +1,35 @@
+###User Defined Function###
+_GUICtrlAVI_Show
+
+###Description###
+Show/Hide the AVI control
+
+###Syntax###
+#include <GuiAVI.au3>
+_GUICtrlAVI_Show ( $hWnd, $iState )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iState
+	State of the AVI, can be the following values:
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True - the control was previously visible.
+	False - the control was previously hidden.
+Failure:	 sets the @error flag to non-zero.
+@@End@@
+
+###Remarks###
+None.
+
+
+###Related###
+
+
+###Example###
+@@IncludeExample@@

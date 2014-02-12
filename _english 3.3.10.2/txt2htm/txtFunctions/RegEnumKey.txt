@@ -1,0 +1,41 @@
+###Function###
+RegEnumKey
+
+###Description###
+Reads the name of a subkey according to its instance.
+
+###Syntax###
+RegEnumKey ( "keyname", instance )
+
+
+###Parameters###
+@@ParamTable@@
+keyname
+	The registry key to read.
+instance
+	The 1-based key instance to retrieve
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the requested subkey name.
+Failure:	an empty string and sets the @error flag to non-zero.
+@error:	 1 = unable to open requested key
+	 2 = unable to open requested main key
+	 3 = unable to remote connect to the registry
+	-1 = unable to retrieve requested subkey (key instance out of range)
+@@End@@
+
+
+###Remarks###
+A registry key must start with "HKEY_LOCAL_MACHINE" ("HKLM") or "HKEY_USERS" ("HKU") or "HKEY_CURRENT_USER" ("HKCU") or "HKEY_CLASSES_ROOT" ("HKCR") or "HKEY_CURRENT_CONFIG" ("HKCC").
+
+When running on 64-bit Windows if you want to enum a key specific to the 64-bit environment you have to suffix the HK... with 64 i.e. HKLM64.
+
+
+###Related###
+RegEnumVal, RegDelete, RegWrite
+
+
+###Example###
+@@IncludeExample@@

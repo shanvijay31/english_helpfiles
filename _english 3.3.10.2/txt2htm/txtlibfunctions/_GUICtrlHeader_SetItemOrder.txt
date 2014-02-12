@@ -1,0 +1,38 @@
+###User Defined Function###
+_GUICtrlHeader_SetItemOrder
+
+###Description###
+Sets the order in which the item appears
+
+###Syntax###
+#include <GuiHeader.au3>
+_GUICtrlHeader_SetItemOrder ( $hWnd, $iIndex, $iOrder )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the control
+$iIndex
+	0-based item index
+$iOrder
+	0-based item order
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	True.
+Failure:	False.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlHeader_GetItemOrder
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,33 @@
+###Function###
+Execute
+
+###Description###
+Execute an expression.
+
+###Syntax###
+Execute ( string )
+
+
+###Parameters###
+@@ParamTable@@
+string
+	string representing an expression to be evaluated.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the value of the evaluated expression.
+Failure:	"" (empty string) and sets the @error flag to non-zero.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+Assign, Eval, Call
+
+
+###Example###
+@@IncludeExample@@

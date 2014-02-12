@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUIToolTip_DelTool
+
+###Description###
+Deletes a tool from a tooltip control
+
+###Syntax###
+#include <GuiToolTip.au3>
+_GUIToolTip_DelTool ( $hWnd, $hTool [, $iID = 0] )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Handle to the ToolTip control (returned by <a href ="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+$hTool
+	Handle to the window that contains the tool (see Remarks)
+$iID
+	[optional] Handle of the tool to delete (see Remarks)
+@@End@@
+
+###ReturnValue###
+None.
+
+
+###Remarks###
+Use the same parameters for $hTool and $iID that were used to create the tool using <a href="_GUIToolTip_AddTool.htm">_GUIToolTip_AddTool</a>
+
+
+###Related###
+_GUIToolTip_AddTool
+
+###Example###
+@@IncludeExample@@

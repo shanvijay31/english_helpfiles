@@ -1,0 +1,37 @@
+###Function###
+TrayCreateMenu
+
+###Description###
+Creates a menu control for the tray menu.
+
+###Syntax###
+TrayCreateMenu ( "sub/menutext" [, menuID = -1 [, menuentry = -1]] )
+
+
+###Parameters###
+@@ParamTable@@
+sub/menutext
+	The sub/menu text.
+menuID
+	[optional] If defined, allows you to create a submenu in the referenced menu. Default -1 (refers to first level menu).
+menuentry
+	[optional] Allows you to define the entry number to be created. The entries are numbered starting at 0. Default -1 (at the bottom).
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the identifier (controlID) of the new tray menu.
+Failure:	0.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+TrayItemSetState, TrayItemSetText, TrayGetMsg, TrayItemDelete
+
+
+###Example###
+@@IncludeExample@@

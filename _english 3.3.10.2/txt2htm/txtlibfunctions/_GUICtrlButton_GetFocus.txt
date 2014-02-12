@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUICtrlButton_GetFocus
+
+###Description###
+Retrieves if the button has keyboard focus
+
+###Syntax###
+#include <GuiButton.au3>
+_GUICtrlButton_GetFocus ( $hWnd )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+True:	Button has focus.
+False:	Button does not have focus.
+@@End@@
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlButton_SetFocus
+
+
+###Example###
+@@IncludeExample@@

@@ -1,0 +1,34 @@
+###User Defined Function###
+_GUICtrlEdit_PosFromChar
+
+###Description###
+Retrieves the client area coordinates of a specified character in an edit control
+
+###Syntax###
+#include <GuiEdit.au3>
+_GUICtrlEdit_PosFromChar ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iIndex
+	The 0-based index of the character
+@@End@@
+
+###ReturnValue###
+Returns an array in the following format:
+	[0] - The horizontal coordinate
+	[1] - The vertical coordinate
+
+
+###Remarks###
+None.
+
+
+###Related###
+
+
+###Example###
+@@IncludeExample@@

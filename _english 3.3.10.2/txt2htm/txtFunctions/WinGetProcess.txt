@@ -1,0 +1,35 @@
+###Function###
+WinGetProcess
+
+###Description###
+Retrieves the Process ID (PID) associated with a window.
+
+###Syntax###
+WinGetProcess ( "title" [, "text"] )
+
+
+###Parameters###
+@@ParamTable@@
+title
+	The title/hWnd/class of the window to get the PID. See <a href="../intro/windowsadvanced.htm">Title special definition</a>.
+text
+	[optional] The text of the window to get the PID. Default is an empty string. See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a process ID (PID).
+Failure:	-1.
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+ProcessWait, ProcessWaitClose, ProcessList
+
+
+###Example###
+@@IncludeExample@@

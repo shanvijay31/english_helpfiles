@@ -1,0 +1,42 @@
+###User Defined Function###
+_IECreateEmbedded
+
+###Description###
+Create a Webbrowser object suitable for embedding in an AutoIt GUI with GUICtrlCreateObj().
+
+###Syntax###
+#include <IE.au3>
+_IECreateEmbedded (  )
+
+
+###Parameters###
+None.
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a Webbrowser object reference.
+Failure:	sets the @error flag to non-zero.
+@error:	1 ($_IEStatus_GeneralError) - General Error
+@@End@@
+
+
+###Remarks###
+No actions can be performed on this object until it has been embedded into a parent application (e.g. you cannot perform an <a href="_IENavigate.htm">_IENavigate()</a>.
+Because of this restriction, the browser is not automatically navigated to 'about:blank' as is a browser created with <a href="_IECreate.htm">_IECreate()</a>.
+You must therefore use <a href="_IENavigate.htm">_IENavigate()</a> to navigate this browser to 'about:blank' after it has been embedded into the parent application and before you attempt any operations that rely on having a document loaded (e.g. <a href="_IEBodyWriteHTML.htm">_IEBodyWriteHTML()</a>
+ ).
+
+There are several properties related to an InternetExplorer object (e.g. returned by <a href="_IECreate.htm">_IECreate()</a> ) that do not apply to this object.
+These include status text, addressbar and others that may exist for a browser, but do not exist for an embedded control.
+
+You may have object visibility issues unless you use the Windows style $WS_CLIPCHILDREN in <a href="../functions/GUICreate.htm">GUICreate()</a>.
+
+<a href="_IEQuit.htm">_IEQuit()</a> cannot be used with this object.  The object will be destroyed when its parent GUI is destroyed.
+
+
+###Related###
+_IEAttach, _IECreate, _IENavigate
+
+
+###Example###
+@@IncludeExample@@

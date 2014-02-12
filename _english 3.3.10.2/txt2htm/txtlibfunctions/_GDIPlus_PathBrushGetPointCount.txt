@@ -1,0 +1,38 @@
+###User Defined Function###
+_GDIPlus_PathBrushGetPointCount
+
+###Description###
+Gets the number of points in the array of points that defines a brush's boundary path
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_PathBrushGetPointCount ( $hPathGradientBrush )
+
+
+###Parameters###
+@@ParamTable@@
+$hPathGradientBrush
+	Pointer to a PathGradientBrush object
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the number of point in the array of points that defines the brush's boundary path.
+Failure:	-1 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+None
+
+
+###See Also###
+@@MsdnLink@@ GdipGetPathGradientPointCount
+
+
+###Example###
+@@IncludeExample@@

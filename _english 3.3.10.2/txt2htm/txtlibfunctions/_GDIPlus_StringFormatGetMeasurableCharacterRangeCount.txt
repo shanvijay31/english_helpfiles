@@ -1,0 +1,38 @@
+###User Defined Function###
+_GDIPlus_StringFormatGetMeasurableCharacterRangeCount
+
+###Description###
+Gets the number of measurable character ranges that are currently set for a StringFormat object
+
+###Syntax###
+#include <GDIPlus.au3>
+_GDIPlus_StringFormatGetMeasurableCharacterRangeCount ( $hStringFormat )
+
+
+###Parameters###
+@@ParamTable@@
+$hStringFormat
+	Pointer to a StringFormat object
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	the number of character ranges that can be measured.
+Failure:	-1 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GDIPlus_GraphicsMeasureCharacterRanges, _GDIPlus_StringFormatSetMeasurableCharacterRanges
+
+
+###See Also###
+@@MsdnLink@@ GdipGetStringFormatMeasurableCharacterRangeCount
+
+
+###Example###
+@@IncludeExample@@

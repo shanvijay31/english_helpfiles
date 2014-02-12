@@ -1,0 +1,33 @@
+###User Defined Function###
+_GUICtrlListBox_GetItemRectEx
+
+###Description###
+Retrieves the rectangle that bounds an item
+
+###Syntax###
+#include <GuiListBox.au3>
+_GUICtrlListBox_GetItemRectEx ( $hWnd, $iIndex )
+
+
+###Parameters###
+@@ParamTable@@
+$hWnd
+	Control ID/Handle to the control
+$iIndex
+	Specifies the 0-based index of the item
+@@End@@
+
+###ReturnValue###
+Returns a $tagRECT structure that receives the client coordinates for the item.
+
+
+###Remarks###
+None.
+
+
+###Related###
+_GUICtrlListBox_GetItemRect, $tagRECT
+
+
+###Example###
+@@IncludeExample@@

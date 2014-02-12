@@ -1,0 +1,45 @@
+###User Defined Function###
+_FTP_ListToArray2D
+
+###Description###
+Get Filenames and filesizes of current remote directory.
+
+###Syntax###
+#include <FTPEx.au3>
+_FTP_ListToArray2D ( $hFTPSession [, $iReturnType = 0 [, $iFlags = $INTERNET_FLAG_NO_CACHE_WRITE [, $iContext = 0]]] )
+
+
+###Parameters###
+@@ParamTable@@
+$hFTPSession
+	as returned by <a href="_FTP_Connect.htm">_FTP_Connect()</a>.
+$iReturntype
+	[optional] 0 = Both Files and Directories, 1 = Directories, 2 = Files.
+$iFlags
+	[optional] default = $INTERNET_FLAG_NO_CACHE_WRITE. See <a href="_FTP_FindFileFirst.htm">_FTP_FindFileFirst()</a>.
+$iContext
+	[optional] A variable that contains the application-defined value that associates this search with any application data.
+	This is only used if the application has already called <a  href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback()</a> to set up a status callback function.
+@@End@@
+
+###ReturnValue###
+@@ReturnTable@@
+Success:	a 2D array with names and size:
+		$Array[0][0] = number of found entries
+		...
+		$Array[n][0] Filename
+		$Array[n][1] Filesize
+Failure:	$Array[0][0] = 0
+@@End@@
+
+
+###Remarks###
+None.
+
+
+###Related###
+_FTP_Connect, _FTP_SetStatusCallback
+
+
+###Example###
+@@IncludeExample@@
